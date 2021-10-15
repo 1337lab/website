@@ -7,9 +7,10 @@ import { Constants } from "../models/constants";
 import * as gtag from "../lib/gtag";
 
 export default function Home() {
-  const title = "Skeleton Crew | Skull NFTs for Solana";
+  const title = "UniBulls | The beginning of 1337 Labs";
 
   const [openFAQId, setOpenFAQId] = useState<string>(null);
+  const [isSoonModalOpen, setIsSoonModalOpen] = useState<boolean>(Constants.dropDateTime < new Date().getTime() ? true : false);
 
   return (
     <Layout title={title}>
@@ -17,16 +18,16 @@ export default function Home() {
         <section id="top">
           <div id="intro">
             <div id="intro-right">
-              <div id="skull-grid"></div>
+              <div id="bull-grid"></div>
             </div>
             <div id="intro-left">
               <div id="intro-left-container">
-                <div id="mini-skull-container">
-                  <div id="mini-skull">
+                <div id="mini-bull-container">
+                  <div id="mini-bull">
                     <Link href="/" passHref={true}>
                       <a>
                         <Image
-                          id="mini-skull-img"
+                          id="mini-bull-img"
                           src="/images/logos/1.png"
                           alt="Skeleton Crew Skull"
                           width="112"
@@ -40,9 +41,9 @@ export default function Home() {
                 <h1 id="welcome">
                   WELCOME
                   <br />
-                  TO THE
+                  TO
                   <br />
-                  SKELETON CREW
+                  UniBulls
                 </h1>
                 <p id="date">Dropping {Constants.dropDateAndTime}</p>
               </div>
@@ -50,7 +51,7 @@ export default function Home() {
           </div>
           <div className="clear" />
           <div id="buy">
-            <div id="skulls-banner-top" className="skulls-banner">
+            <div id="bulls-banner-top" className="bulls-banner">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="2039.1"
@@ -70,57 +71,57 @@ export default function Home() {
           </Link>
         </section>
         <section id="roadmap">
-          <div id="airdrop-skull-1" className="question-skull">
+          <div id="airdrop-bull-1" className="question-bull">
             <Image
-              src="/images/question-skull-green.png"
+              src="/images/question-bull-green.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
             />
           </div>
-          <div id="airdrop-skull-2" className="question-skull">
+          <div id="airdrop-bull-2" className="question-bull">
             <Image
-              src="/images/question-skull-yellow.png"
+              src="/images/question-bull-yellow.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
             />
           </div>
-          <div id="airdrop-skull-3" className="question-skull">
+          <div id="airdrop-bull-3" className="question-bull">
             <Image
-              src="/images/question-skull-yellow.png"
+              src="/images/question-bull-yellow.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
             />
           </div>
-          <div id="airdrop-skull-4" className="question-skull">
+          <div id="airdrop-bull-4" className="question-bull">
             <Image
-              src="/images/question-skull-yellow-right.png"
+              src="/images/question-bull-yellow-right.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
             />
           </div>
-          <div id="airdrop-skull-5" className="question-skull">
+          <div id="airdrop-bull-5" className="question-bull">
             <Image
-              src="/images/question-skull-green.png"
+              src="/images/question-bull-green.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
             />
           </div>
-          <div id="airdrop-skull-6" className="question-skull">
+          <div id="airdrop-bull-6" className="question-bull">
             <Image
-              src="/images/question-skull-medgreen.png"
+              src="/images/question-bull-medgreen.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
             />
           </div>
-          <div id="airdrop-skull-7" className="question-skull">
+          <div id="airdrop-bull-7" className="question-bull">
             <Image
-              src="/images/question-skull-green.png"
+              src="/images/question-bull-green.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
@@ -394,7 +395,7 @@ export default function Home() {
               <p className="title">EXAMPLE</p>
               <div id="calendar-popup-img">
                 <Image
-                  src="/images/question-skull-green.png"
+                  src="/images/question-bull-green.png"
                   alt="Skull"
                   width="100"
                   height="115"
@@ -793,9 +794,9 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div id="skulls-row-mobile">
+          <div id="bulls-row-mobile">
             <Image
-              src="/images/skulls-row-mobile.png"
+              src="/images/bulls-row-mobile.png"
               width="428"
               height="250"
               layout="responsive"
@@ -803,9 +804,9 @@ export default function Home() {
               loading="eager"
             />
           </div>
-          <div id="skulls-row">
+          <div id="bulls-row">
             <Image
-              src="/images/skulls-row.png"
+              src="/images/bulls-row.png"
               width="3840"
               height="1154"
               layout="responsive"
@@ -846,33 +847,33 @@ export default function Home() {
               </p>
             </li>
           </ul>
-          <div id="question-skull-1" className="question-skull">
+          <div id="question-bull-1" className="question-bull">
             <Image
-              src="/images/question-skull-green.png"
+              src="/images/question-bull-green.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
             />
           </div>
-          <div id="question-skull-2" className="question-skull">
+          <div id="question-bull-2" className="question-bull">
             <Image
-              src="/images/question-skull-green.png"
+              src="/images/question-bull-green.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
             />
           </div>
-          <div id="question-skull-3" className="question-skull">
+          <div id="question-bull-3" className="question-bull">
             <Image
-              src="/images/question-skull-yellow.png"
+              src="/images/question-bull-yellow.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
             />
           </div>
-          <div id="question-skull-4" className="question-skull">
+          <div id="question-bull-4" className="question-bull">
             <Image
-              src="/images/question-skull-yellow-right.png"
+              src="/images/question-bull-yellow-right.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
@@ -880,9 +881,9 @@ export default function Home() {
           </div>
         </section>
         <section id="built-on-solana">
-          <div id="question-skull-5" className="question-skull">
+          <div id="question-bull-5" className="question-bull">
             <Image
-              src="/images/question-skull-medgreen.png"
+              src="/images/question-bull-medgreen.png"
               alt="Question Mark Skull"
               width="300"
               height="344"
@@ -911,9 +912,9 @@ export default function Home() {
           </p>
         </section>
         <section id="faq">
-          <div id="skulls-row-2-mobile">
+          <div id="bulls-row-2-mobile">
             <Image
-              src="/images/skulls-row-2-mobile.png"
+              src="/images/bulls-row-2-mobile.png"
               width="428"
               height="250"
               layout="responsive"
@@ -921,9 +922,9 @@ export default function Home() {
               loading="eager"
             />
           </div>
-          <div id="skulls-row-2">
+          <div id="bulls-row-2">
             <Image
-              src="/images/skulls-row-2.png"
+              src="/images/bulls-row-2.png"
               width="3840"
               height="1154"
               layout="responsive"
@@ -991,8 +992,8 @@ export default function Home() {
             </a>
           </Link>
         </section>
-        <section id="skulls-banner-bottom-section">
-          <div id="skulls-banner-bottom" className="skulls-banner">
+        <section id="bulls-banner-bottom-section">
+          <div id="bulls-banner-bottom" className="bulls-banner">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2039.1"
@@ -1034,9 +1035,9 @@ export default function Home() {
           }}
         ></div>
         <div className="modal-container">
-          <div className="modal-skull">
+          <div className="modal-bull">
             <Image
-              src="/images/modal-skull.png"
+              src="/images/modal-bull.png"
               alt="Skull"
               width="410"
               height="470"

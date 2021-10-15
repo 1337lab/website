@@ -4,7 +4,7 @@ import { Layout } from "../components/Layout";
 import { Constants } from "../models/constants";
 
 export default function Terms() {
-  const title = "Terms | Skeleton Crew | Skull NFTs for Solana";
+  const title = "Terms | Unibulls | The beginning of 1337 Labs";
 
   return (
     <Layout title={title}>
@@ -13,14 +13,14 @@ export default function Terms() {
           <div id="intro">
             <div id="intro-left">
               <div id="intro-left-container">
-                <div id="mini-skull-container">
-                  <div id="mini-skull">
+                <div id="mini-bull-container">
+                  <div id="mini-bull">
                     <Link href="/" passHref={true}>
                       <a>
                         <Image
-                          id="mini-skull-img"
+                          id="mini-bull-img"
                           src="/images/logos/1.png"
-                          alt="Skeleton Crew Skull"
+                          alt="UniBull"
                           width="112"
                           height="112"
                           unoptimized
@@ -42,9 +42,9 @@ export default function Terms() {
           <div className="clear-both" />
         </section>
         <section id="tos">
-          <div id="skulls-row-2-mobile">
+          <div id="bulls-row-2-mobile">
             <Image
-              src="/images/skulls-row-2-mobile.png"
+              src="/images/bulls-row-2-mobile.png"
               className="w-full"
               width="428"
               height="250"
@@ -53,9 +53,9 @@ export default function Terms() {
               loading="eager"
             />
           </div>
-          <div id="skulls-row-2">
+          <div id="bulls-row-2">
             <Image
-              src="/images/skulls-row-2.png"
+              src="/images/bulls-row-2.png"
               className="w-full"
               width="3840"
               height="1154"
@@ -413,8 +413,8 @@ export default function Terms() {
             </a>
           </Link>
         </section>
-        <section id="skulls-banner-bottom-section">
-          <div id="skulls-banner-bottom" className="skulls-banner">
+        <section id="bulls-banner-bottom-section">
+          <div id="bulls-banner-bottom" className="bulls-banner">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2039.1"
